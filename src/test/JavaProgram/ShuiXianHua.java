@@ -6,10 +6,7 @@ public class ShuiXianHua {
 
         int counter = 0;
         for ( int i = 100; i <= 999; ++i ) {
-            int a = i/100;
-            int b = i/10%10;
-            int c = i%10;
-            if ( Math.pow( a, 3) + Math.pow( b, 3 ) + Math.pow( c, 3 ) == i ) {
+            if ( Math.pow( i/100, 3) + Math.pow( i/10%10, 3 ) + Math.pow( i%10, 3 ) == i ) {
                 counter++;
                 System.out.print( i + "\t" );
                 if ( counter%5==0 ) System.out.println();
