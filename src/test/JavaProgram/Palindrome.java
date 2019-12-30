@@ -6,9 +6,7 @@ public class Palindrome {
             int[] d = new int[5];
 
             int counter = 0;
-            boolean flag = false;
-            int i = 10000;
-            for ( ; i < 100000; ++i ) {
+            for ( int i = 10000; ; i < 100000; ++i ) {
                 int idx = 0;
                 int num = i;
                 while ( num != 0 ) {
@@ -17,7 +15,6 @@ public class Palindrome {
                 }
                 if ( d[0] == d[4] && d[1] == d[3] ) {
                     counter++;
-                    flag = true;
                     System.out.print( i );
                     if ( counter % 5 == 0 ) System.out.println( );
                 }
